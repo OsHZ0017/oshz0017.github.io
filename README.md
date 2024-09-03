@@ -1,4 +1,11 @@
-## Hi there 👋
+## Hello There ✨🧙‍♂️
+
+My name is Mika. I'm currently taking a course in ICT in the Netherlands, and this Git will hold some the projects I work on!
+My pronouns are He/Him and I was born in July 2003, do the math.
+
+Interested to collab on any HTML and CSS webpage projects, learning about basically everything else.
+
+Excited to finally know how Github works!
 
 <!--
 **OsHZ0017/OsHZ0017** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
