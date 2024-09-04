@@ -7,10 +7,26 @@
     <title>About me</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+      .toddler{
+        float: right;
+        height: auto;
+        padding: 20px;
+      }
+
+      .watervid{
+        float: left;
+      }
+
+      .snapqr{
+        float: right;
+      }
+    </style>
+
   </style>
   </head>
   <body>
-    <main>
+    <header>
       <nav>
         <a href="index.html">Home page</a>
         <a href="profile.html">About me</a>
@@ -18,13 +34,20 @@
         <a href="faq.html">Frequently asked Questions</a>
         <a href="dashboard.html">Dashboard</a>
       </nav>  
-    <article>
+    </header>
+    <main>
+      <div class="toddler">
+        <img src="Media/toddler2.jpg" style="height:340px">
+      </div>  
+    <article style="text-align:left;">
       <h1>Who am I?</h1>
       <p>My name is <strong>Mika van Os</strong>, I am <strong>21 years</strong> old and have been living in Zeeland for the majority of my life, specifically in Goes.
       <br>I live with both my parents, and a younger sibling, there is a year and a half between her and me. We live in the city of Goes</p>
       <p>When it comes to education, I've completed the Dutch High School system and have been granted my "HAVO" diploma, this is more or less defined as "Senior General Secondary Education", though I have to admit I haven't the faintest as to what that means exactly.</p>
       <p>I originally intended to go to an Art Academy, but was turned away wherever I applied. It's still a dream but not a realistic one. I decided to go into ICT mainly because the magic of computer coding has always enticed me, but also perhaps because it's still a better optiion than politics.</p>
       <P>I have a job delivering newspapers, which I dilligently fufill every morning with the exception of sundays.</P>
+    </article>
+    <article style="text-align:right;">
       <h2>To list some of my further hobbies</h2>
       <dl>
         <dt>Playing games</dt>
@@ -35,11 +58,14 @@
           <dd>You'll likely see me doodle in class. I enjoy drawing and always have, you're free to ask to see my sketchbook and I'll gladly show you it!</dd>
       </dl>
         <h5 style="padding-left:50px;">A little bonus I would add here which isn't expansive enough to be a hobby, but is still a fun activity I've engaged in is the fact that I've made a website before. That one was made to intentionally look kind of shitty, because I liked the aesthetic of older, janky websites. You can find it <a href="https://www.suunn.nl/" target="_blank">Here</a> if you're interested.</h5>
-    <div class="toddler">
-      <img src="Media/toddler2.jpg">
-    </div>
     </article>
-    <article>
+    <div class="watervid">
+      <video width="300px" height="auto" controls>
+        <source src="Media/VIDEO-2024-07-12-11-51-01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div> 
+    <article style="text-align:right;"> 
       <h1>Characteristics</h1>
       <p>I will share some of my characteristics, some lists in no particular order.</p>
       <table>
@@ -61,11 +87,8 @@
         </tr>
       </table>
     </article>
-    <div class="watervid">
-      <video width="300px" height="auto" controls>
-        <source src="Media/VIDEO-2024-07-12-11-51-01.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="snapqr">
+      <img src="Media/snapcode.png" style="width:200px;height:auto;">
     </div>
     <article>
       <h2>Social Medias</h2>
@@ -74,9 +97,6 @@
         <a href="https://www.instagram.com/unapologetically.mika/" target="_blank">Instagram</a><br>
         <a href="https://snapchat.com/t/jd1SSJRq" target="_blank">Snapchat</a>
     </artile>
-    <div class="snapqr">
-      <img src="Media/snapcode.jpg">
-    </div>
     </main>
     </body>
 </html>
