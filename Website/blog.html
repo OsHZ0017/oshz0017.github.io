@@ -7,27 +7,88 @@
         <link rel="stylesheet" href="style.css">
                 <!--div navigating-->
         <style>
-    .swot {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .swot-blog {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      padding: 12px 16px;
-      z-index: 1;
-    }
-    
-    .swot:hover .swot-blog {
-      display: block;
-    }
+          .blog {
+            display: none;
+          }
         </style>
     </head>
     <body>
+      <script>
+          // Scripting for the blog posts to drop down /
+                // Activates script when the DOM is loaded /
+                document.addEventListener("DOMContentLoaded", function() {
+            // Defines the target menu /
+        var dropdown = document.getElementsByClassName("swot-blog");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+        // Activates menu when you click it /
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        // I wish I knew what this meant /
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    // Yay I love closing bracketes! /
+  });
+
+                  document.addEventListener("DOMContentLoaded", function() {
+        var dropdown = document.getElementsByClassName("experience-blog");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+        var dropdown = document.getElementsByClassName("feedback1-blog");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+        var dropdown = document.getElementsByClassName("ict-blog");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  });
+  
+      </script>
         <header>
             <nav>
               <a href="index.html">Home page</a>
@@ -39,27 +100,38 @@
           </header>
           <main>
             <section>
-              <article>
+              <article class="swot">
                 <h1>SWOT analysis</h1>
                   <p>I am a human with mediocre qualities</p>
-                  <div class="swot">
-                  <span>Read more?</span>
-                  <div class="swot-blog">
+                  <button class="swot-blog">Read more?</button>
+                  <div class="blog">
                     <p>my qualities include but are not limited to, be cool</p>
                   </div>
                 </div>
               </article>
-              <article>
+              <article class="experience">
                 <h1>Programming experience</h1>
                 <p>content</p>
+                <button class="experience-blog">Read more?</button>
+                <div class="blog">
+                  <p>so sexy</p>
+                </div>
               </article>
-              <article>
+              <article class="feedback1">
                 <h1>Teachers Feedback</h1>
                 <p>content</p>
+                <button class="feedback1-blog">Read more?</button>
+                <div class="blog">
+                  <p>the awesomest</p>
+                </div>
               </article>
-              <article>
+              <article class="ict">
                 <h1>ICT Companies</h1>
                 <p>content</p>
+                <button class="ict-blog">Read more?</button>
+                <div class="blog">
+                  <p>holy moly</p>
+                </div>
               </article>
             </section>
           </main>
