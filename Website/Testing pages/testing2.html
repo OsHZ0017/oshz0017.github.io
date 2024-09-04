@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <style>
-/* Style the sidenav links and the dropdown button */
-.swot-blog {
-    padding: 2px;
-  border: 1px solid black;
-}
-
-
-   </style> 
-
-</head>
-<body>
+  <head>
+    <style>
+      /* Style the sidenav links and the dropdown button */
+      .swot-blog {
+        padding: 2px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
     <script>
-        // Activates script when the DOM is loaded /
-          document.addEventListener("DOMContentLoaded", function() {
-            // Defines the target menu /
+      // Activates script when the DOM is loaded /
+      document.addEventListener("DOMContentLoaded", function () {
+        // Defines the target menu /
         var dropdown = document.getElementsByClassName("swot-blog");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-        // Activates menu when you click it /
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        // I wish I knew what this meant /
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          // Activates menu when you click it /
+          dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            // I wish I knew what this meant /
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
         }
+        // Yay I love closing bracketes! /
       });
-    }
-    // Yay I love closing bracketes! /
-});
-       </script>
+    </script>
     <div class="swot">
       <p>hell ensues</p>
-        <button id="text" class="swot-blog">Read more?
-        </button>
-        <div>
-          <p>Burn in pits of fire you fiend</p>
-        </div>
+      <button id="text" class="swot-blog">Read more?</button>
+      <div>
+        <p>Burn in pits of fire you fiend</p>
       </div>
-</body>
+    </div>
+  </body>
 </html>
