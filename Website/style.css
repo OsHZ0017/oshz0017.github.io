@@ -1,3 +1,25 @@
+
+/*Header*/
+
+nav{
+  a:link, a:visited {
+      background-color: white;
+      color: black;
+      border: 2px solid green;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: green;
+      color: rgb(34, 0, 255);
+    }
+  }
+
+  /*Body*/
+
 body { 
     margin: 10px;
     text-align: center;
@@ -10,25 +32,21 @@ body {
 article{
     padding-left: 10px;
     width: auto;
+    text-align: center;
 }
 
 p{
     padding-left: 10px;
 }
 
-nav{
-a:link, a:visited {
-    background-color: white;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: green;
-    color: rgb(34, 0, 255);
-  }
+
+h1, h2, dl{
+  text-align: center;
 }
+
+
+table{
+  display: inline-block;
+  text-align: center;
+}
+
