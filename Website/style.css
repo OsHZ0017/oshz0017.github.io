@@ -1,0 +1,23 @@
+body { 
+    margin: auto;
+    text-align: center;
+}
+
+article{
+    padding-left: 10px;
+}
+
+p{
+    padding-left: 10px;
+}
+
+dl{
+    text-allign: left;
+}
+
+
+#divisions
+
+img {
+    float: right;
+}
