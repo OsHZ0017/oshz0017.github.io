@@ -44,6 +44,9 @@
         </aside>
         <article style="width:70%;">
         <p>This area will hold all the information regarding my progress during the school year. What exams have I done? What grades have I recieved? Do I get to resit that exam?</p>
+        <button id="text" class="recalculate" onclick="gradePass()">
+          Recalculate points
+        </button>
         <table class="ectable">
           <tr>
             <th style="border:none;">EC's Recieved</th>
@@ -51,7 +54,7 @@
             <th style="border:none;">EC's to Get</th>
           </tr>
           <tr>
-            <td class="ecs" style="border:none;"></td>
+            <td style="border:none;" id="totalECs"></td>
             <td style="border:none;">/</td>
             <td style="border:none;">60</td>
           </tr>
@@ -65,56 +68,56 @@
           <tr>
             <th style="width:320px;">Course Name</th>
             <th style="width:320px;">Exam Name</th>
-            <th>Credits</th>
-            <th>Grade</th>
+            <th style="width:80px;">Credits</th>
+            <th style="width:80px;">Grade</th>
           </tr>
           <tr>
             <td>Programming</td>
             <td>Programming</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>The Software Playground</td>
             <td>The Software Playground</td>
-            <td>7.5</td>
-            <td>..</td>
+            <td class="ec">7.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>The Maze of Data</td>
             <td>The Maze of Data</td>
-            <td>7.5</td>
-            <td>..</td>
+            <td class="ec">7.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Computer Science Basics</td>
             <td>Computer Science Basics</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Engels C1</td>
             <td>Engels C1</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Engels B2</td>
             <td>Engels B2</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Engels B1</td>
             <td>Engels B1</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Nederlands 3F</td>
             <td>Nederlands 3F</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
         </table>
       </article>
@@ -130,50 +133,50 @@
           <tr>
             <td>User story development</td>
             <td>User story development</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Personal Professional Development Exploration</td>
             <td>Personal Professional Development Exploration</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Buisness Model-driven development</td>
             <td>Buisness Model-driven development</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Data Drive Business</td>
             <td>Data Drive Business</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Knowing the Business</td>
             <td>Knowing the Business</td>
-            <td>10</td>
-            <td>..</td>
+            <td class="ec">10</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Preparing Data for Statistical Analysis</td>
             <td>Preparing Data for Statistical Analysis</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Understanding Data in the Data Science</td>
             <td>Understanding Data in the Data Science</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Sprint Demo</td>
             <td>Sprint Demo</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
         </table>
       </article>
@@ -189,26 +192,26 @@
           <tr>
             <td>IT Architecture Fundamentals</td>
             <td>IT Architecture Fundamentals</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Digital Security and Responsible Tech</td>
             <td>Digital Security and Responsible Tech</td>
-            <td>2.5</td>
-            <td>..</td>
+            <td class="ec">2.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Microservice Design</td>
             <td>Microservice Design</td>
-            <td>12.5</td>
-            <td>..</td>
+            <td class="ec">12.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Product Innovation</td>
             <td>Product Innovation</td>
-            <td>12.5</td>
-            <td>..</td>
+            <td class="ec">12.5</td>
+            <td class="grade">..</td>
           </tr>
         </table>
       </article>
@@ -224,30 +227,69 @@
           <tr>
             <td>Personal Professional Development Advanced</td>
             <td>Personal Professional Development Advanced</td>
-            <td>5</td>
-            <td>..</td>
+            <td class="ec">5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Software Quality Evaluation</td>
             <td>Software Quality Evaluation</td>
-            <td>10</td>
-            <td>..</td>
+            <td class="ec">10</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Software Security Analysis</td>
             <td>Software Security Analysis</td>
-            <td>7.5</td>
-            <td>..</td>
+            <td class="ec">7.5</td>
+            <td class="grade">..</td>
           </tr>
           <tr>
             <td>Software Testability Improvement</td>
             <td>Software Testability Improvement</td>
-            <td>7.5</td>
-            <td>..</td>
+            <td class="ec">7.5</td>
+            <td class="grade">..</td>
           </tr>
         </table>
       </article>
       </secton>
     </main>
+    <script>
+      
+      /*function to determine wether a grade is passing*/
+      function gradePass() {
+
+/*minimum grade to pass*/
+let treshold = 5.4;
+
+/* says gradeList means to select all variables under class 'grade'*/
+let gradeList = document.querySelectorAll(".grade"); // returns NodeList
+let gradeArray = [...gradeList]; // converts NodeList to Array
+
+/* says ecList means to select all variables under class 'ec'*/
+let ecList = document.querySelectorAll(".ec");
+let ecArray = [...ecList];
+
+/*Defines standard total EC as 0 (which it is)*/
+let totalECs = 0;
+
+/*takes each single element within the grade array*/
+gradeArray.forEach((gradeElement, index) => {
+
+  /*takes the first value it finds within the gradelist, then the next*/
+  let gradeValue = parseFloat(gradeElement.innerText);
+
+  /*compares each gotten grade to the treshold number*/
+    if (gradeValue > treshold) {
+      /* takes the ec value in the same row and adds it to the totalec value */
+      let ecValue = parseFloat(ecArray[index].innerText);
+      totalECs += ecValue;
+    }
+    
+  
+});
+
+/*displays the calculated total ec value within the defined <p> of totalECs*/
+document.getElementById("totalECs").innerHTML = `${totalECs}`;
+}
+    </script>
   </body>
 </html>
