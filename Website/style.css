@@ -3,8 +3,8 @@
 nav {
   a:link,
   a:visited {
-    background-color: #6e351d;
-    color: #7da6e9;
+    background-color: #07004d;
+    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -14,8 +14,8 @@ nav {
 
   a:hover,
   a:active {
-    background-color: green;
-    color: rgb(34, 0, 255);
+    background-color: #17a398;
+    color: black;
   }
 }
 
@@ -26,9 +26,10 @@ body {
   padding: 10px;
   margin-left: 30px;
   margin-right: 30px;
-  overflow: scroll;
-  color: #b5b6de;
-  background: #93583e;
+  overflow-y: scroll;
+  color: #ffffff;
+  background: #5b5b5b;
+  font-family:'Courier New', Courier, monospace;
 }
 
 section {
@@ -40,7 +41,7 @@ article {
   padding-left: 10px;
   width: auto;
   text-align: center;
-  background-color: rgba(110, 70, 32, 0.527);
+  background-color: #6254376e;
   margin: 10px;
   padding: 10px;
 }
@@ -55,25 +56,47 @@ dl {
   text-align: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ddb967
+}
+
+a:link, a:visited, a:active{
+  color:white;
+}
+
+a:hover {
+  color:#17a398;
+}
+
+
+/* table */
+
 table {
   display: inline-block;
   text-align: center;
-  height: auto;
-  width: 80%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 800px;
 }
 
-table,
 th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
+  padding: 10px;
 }
 
-th,
-td {
-  width: 100%;
+th {
+  background-color: #ccc9e7;
+  color: black;
 }
 
 tr:hover {
-  background-color: rgb(13, 13, 129);
+  background-color: #07004d;
+  color: white;
 }
