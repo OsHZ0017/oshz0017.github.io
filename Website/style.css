@@ -66,8 +66,7 @@ p {
 }
 
 h1,
-h2,
-dl {
+h2 {
   text-align: center;
 }
 
@@ -90,7 +89,7 @@ h5 {
 
 
 a:link, a:visited, a:active{
-  color:white;
+  color:#ddb967;
   text-decoration: none;
 }
 

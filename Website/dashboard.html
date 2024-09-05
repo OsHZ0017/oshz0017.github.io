@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      dt {
+        text-shadow: 0 0 rgb(0, 0, 0);
+        text-decoration: bold;
+        width: 75px;
+        float: right;
+      }
+
+      .ectable {
+        border: none;
+        width: 300px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -12,11 +25,39 @@
         <a href="index.html">Home page</a>
         <a href="profile.html">About me</a>
         <a href="blog.html">Blog</a>
-        <a href="faq.html">Frequently asked Questions</a>
+        <a href="faq.html">FAQ</a>
         <a href="dashboard.html">Dashboard</a>
       </nav>
     </header>
     <main>
+      <section>
+        <aside style="width:20%;padding:10px;">
+          <h4>legend!</h4>
+          <dl style="text-align:right;">
+            <dt style="background-color:red;">Red</dt>
+            <dd>Fail</dd>
+            <dt style="background-color:orange;">Orange</dt>
+            <dd>Resit</dd>
+            <dt style="background-color:green;">Green</dt>
+            <dd>Pass</dd>
+          </dl>
+        </aside>
+        <article style="width:70%;">
+        <p>This area will hold all the information regarding my progress during the school year. What exams have I done? What grades have I recieved? Do I get to resit that exam?</p>
+        <table class="ectable">
+          <tr>
+            <th style="border:none;">EC's Recieved</th>
+            <th style="border:none;"></th>
+            <th style="border:none;">EC's to Get</th>
+          </tr>
+          <tr>
+            <td class="ecs" style="border:none;"></td>
+            <td style="border:none;">/</td>
+            <td style="border:none;">60</td>
+          </tr>
+        </table>
+        </article>
+      </section>
       <section>
         <article>
         <h2>Exams first Quartile</h2>
