@@ -6,7 +6,7 @@ function gradePass() {
   let treshold = 5.4;
 
   /*nbsa treshold*/
-  let nbsaTreshold = 45;
+  let nbsaTreshold = 44;
 
   /* says gradeList means to select all variables under class 'grade'*/
   let gradeList = document.querySelectorAll(".grade"); // returns NodeList
