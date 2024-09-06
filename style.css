@@ -1,5 +1,4 @@
 /*Header*/
-
 nav {
   a:link,
   a:visited {
@@ -60,7 +59,6 @@ aside {
 }
 
 /*text specific */
-
 p {
   padding-left: 10px;
 }
@@ -86,7 +84,6 @@ h5 {
 }
 
 /* link modification */
-
 a:link,
 a:visited,
 a:active {
@@ -100,7 +97,6 @@ a:hover {
 }
 
 /* table */
-
 table {
   display: inline-block;
   text-align: center;
