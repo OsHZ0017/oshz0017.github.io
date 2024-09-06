@@ -29,7 +29,7 @@ body {
   overflow-y: scroll;
   color: #ffffff;
   background-image: url("media/space2.jpg");
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 section {
@@ -37,7 +37,7 @@ section {
   padding: 40px;
   background-color: #5b5b5ba7;
   width: 80%;
-  display:inline-block;
+  display: inline-block;
   border-radius: 5px;
 }
 
@@ -50,7 +50,7 @@ article {
   padding-bottom: 30px;
 }
 
-aside{
+aside {
   display: block;
   float: right;
   width: 350px;
@@ -81,20 +81,21 @@ h6 {
 }
 
 h5 {
-  text-decoration:none;
+  text-decoration: none;
   text-shadow: none;
 }
 
 /* link modification */
 
-
-a:link, a:visited, a:active{
-  color:#ddb967;
+a:link,
+a:visited,
+a:active {
+  color: #ddb967;
   text-decoration: none;
 }
 
 a:hover {
-  color:#17a398;
+  color: #17a398;
   text-decoration: underline;
 }
 
@@ -149,17 +150,17 @@ tr:hover {
 }
 
 /*Profile Divs*/
-.toddler{
+.toddler {
   float: right;
   padding: 20px;
 }
 
-.watervid{
+.watervid {
   float: left;
   padding: 20px;
 }
 
-.snapqr{
+.snapqr {
   float: right;
   padding: 20px;
 }
