@@ -50,11 +50,13 @@
             <th style="border:none;">EC's Recieved</th>
             <th style="border:none;"></th>
             <th style="border:none;">EC's to Get</th>
+            <th style="border:none;">NBSA</th>
           </tr>
           <tr>
             <td style="border:none;" id="totalECs"></td>
             <td style="border:none;">/</td>
             <td style="border:none;">60</td>
+            <td style="border:NONE;" id="nbsa"></td>
           </tr>
         </table>
         </article>
@@ -258,6 +260,9 @@
 /*minimum grade to pass*/
 let treshold = 5.4;
 
+/*nbsa treshold*/
+let nbsaTreshold = 45;
+
 /* says gradeList means to select all variables under class 'grade'*/
 let gradeList = document.querySelectorAll(".grade"); // returns NodeList
 let gradeArray = [...gradeList]; // converts NodeList to Array
@@ -281,6 +286,10 @@ gradeArray.forEach((gradeElement, index) => {
       let ecValue = parseFloat(ecArray[index].innerText);
       totalECs += ecValue;
     }
+  
+  if (totalECs > nbsaTreshold) {
+    
+  }
     
   
 });
