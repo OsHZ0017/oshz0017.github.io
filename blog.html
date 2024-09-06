@@ -5,90 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Blog feed</title>
         <link rel="stylesheet" href="style.css">
-                <!--div navigating-->
-        <style>
-          .blog {
-            display: none;
-          }
-        </style>
+        <style src="style.css"></style>
     </head>
     <body>
-      <script>
-          // Scripting for the blog posts to drop down /
-                // Activates script when the DOM is loaded /
-                document.addEventListener("DOMContentLoaded", function() {
-            // Defines the target menu /
-        var dropdown = document.getElementsByClassName("swot-blog");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-        // Activates menu when you click it /
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        // I wish I knew what this meant /
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-    // Yay I love closing bracketes! /
-  });
-
-                  document.addEventListener("DOMContentLoaded", function() {
-        var dropdown = document.getElementsByClassName("experience-blog");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-  });
-
-  document.addEventListener("DOMContentLoaded", function() {
-        var dropdown = document.getElementsByClassName("feedback1-blog");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-  });
-
-  document.addEventListener("DOMContentLoaded", function() {
-        var dropdown = document.getElementsByClassName("ict-blog");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-  });
-  
-      </script>
+      <script src="scripts.js"></script>
         <header>
             <nav>
               <a href="index.html">Home page</a>

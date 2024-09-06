@@ -5,17 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      dt {
-        width: 75px;
-        float: right;
-      }
-
-      .ectable {
-        border: none;
-        width: 300px;
-      }
-    </style>
+    <style src="style.css"></style>
   </head>
   <body>
     <header>
@@ -32,11 +22,11 @@
         <aside style="width:20%;padding:10px;">
           <h4>legend!</h4>
           <dl style="text-align:right;">
-            <dt style="background-color:red;margin-left:5px;">Red</dt>
+            <dt class="legend" style="background-color:red;margin-left:5px;">Red</dt>
             <dd>Fail</dd>
-            <dt style="background-color:orange;margin-left:5px;">Orange</dt>
+            <dt class="legend" style="background-color:orange;margin-left:5px;">Orange</dt>
             <dd>Resit</dd>
-            <dt style="background-color:green;margin-left:5px;">Green</dt>
+            <dt class="legend" style="background-color:green;margin-left:5px;">Green</dt>
             <dd>Pass</dd>
           </dl>
         </aside>
@@ -50,13 +40,13 @@
             <th style="border:none;">EC's Recieved</th>
             <th style="border:none;"></th>
             <th style="border:none;">EC's to Get</th>
-            <th style="border:none;">NBSA</th>
+            <th style="border:none;border-left:1px solid black;width:100px;">NBSA</th>
           </tr>
           <tr>
-            <td style="border:none;" id="totalECs"></td>
+            <td style="border:none;" id="totalECs">0</td>
             <td style="border:none;">/</td>
             <td style="border:none;">60</td>
-            <td style="border:NONE;" id="nbsa"></td>
+            <td style="border:none;border-left:1px solid black;" class="nbsa">Not yet Passed</td>
           </tr>
         </table>
         </article>
@@ -252,51 +242,6 @@
       </article>
       </secton>
     </main>
-    <script>
-      
-      /*function to determine wether a grade is passing*/
-      function gradePass() {
-
-/*minimum grade to pass*/
-let treshold = 5.4;
-
-/*nbsa treshold*/
-let nbsaTreshold = 45;
-
-/* says gradeList means to select all variables under class 'grade'*/
-let gradeList = document.querySelectorAll(".grade"); // returns NodeList
-let gradeArray = [...gradeList]; // converts NodeList to Array
-
-/* says ecList means to select all variables under class 'ec'*/
-let ecList = document.querySelectorAll(".ec");
-let ecArray = [...ecList];
-
-/*Defines standard total EC as 0 (which it is)*/
-let totalECs = 0;
-
-/*takes each single element within the grade array*/
-gradeArray.forEach((gradeElement, index) => {
-
-  /*takes the first value it finds within the gradelist, then the next*/
-  let gradeValue = parseFloat(gradeElement.innerText);
-
-  /*compares each gotten grade to the treshold number*/
-    if (gradeValue > treshold) {
-      /* takes the ec value in the same row and adds it to the totalec value */
-      let ecValue = parseFloat(ecArray[index].innerText);
-      totalECs += ecValue;
-    }
-  
-  if (totalECs > nbsaTreshold) {
-    
-  }
-    
-  
-});
-
-/*displays the calculated total ec value within the defined <p> of totalECs*/
-document.getElementById("totalECs").innerHTML = `${totalECs}`;
-}
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>

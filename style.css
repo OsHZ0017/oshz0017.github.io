@@ -125,3 +125,41 @@ tr:hover {
   background-color: #07004d;
   color: white;
 }
+
+/*Dashboard Divs*/
+.legend {
+  width: 75px;
+  float: right;
+}
+
+.ectable {
+  border: none;
+  width: 300px;
+}
+
+/*Blog Divs*/
+.blog {
+  display: none;
+}
+
+/*Index Divs*/
+.suunn {
+  display: inline-block;
+  width: 30%;
+}
+
+/*Profile Divs*/
+.toddler{
+  float: right;
+  padding: 20px;
+}
+
+.watervid{
+  float: left;
+  padding: 20px;
+}
+
+.snapqr{
+  float: right;
+  padding: 20px;
+}
