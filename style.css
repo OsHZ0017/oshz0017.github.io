@@ -58,6 +58,10 @@ aside {
   padding: 20px;
 }
 
+details {
+  text-align: left;
+}
+
 /*text specific */
 p {
   padding-left: 10px;
@@ -73,7 +77,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+summary {
   color: #ddb967;
   text-shadow: 2px 2px black;
 }
@@ -83,6 +88,10 @@ h5 {
   text-shadow: none;
 }
 
+summary {
+  font-size: 20px;
+  font-weight: bold;
+}
 /* link modification */
 a:link,
 a:visited,
