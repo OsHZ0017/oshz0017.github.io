@@ -18,6 +18,13 @@ nav {
   }
 }
 
+header { 
+  width: 600px;
+  background-color: #5b5b5ba7;
+  padding: 20px;
+  display: inline-block;
+}
+
 /*Body*/
 body {
   margin: 10px;
@@ -27,7 +34,8 @@ body {
   margin-right: 30px;
   overflow-y: scroll;
   color: #ffffff;
-  background-image: url("mik");
+  background-image: url("media/mika.png"), url(media/space2.jpg);
+  background-color: black;
   font-family: "Courier New", Courier, monospace;
 }
 
