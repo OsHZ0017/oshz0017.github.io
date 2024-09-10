@@ -29,7 +29,7 @@ function gradePass() {
       /* takes the ec value in the same row and adds it to the totalec value */
       let ecValue = parseFloat(ecArray[index].innerText);
       totalECs += ecValue;
-
+      /* compares new totalECs value to nbsaTreshold to determine if it's passed 44 yet. if yes, changes text to "passed"*/
       if (totalECs > nbsaTreshold) {
         let passed = document.getElementsByClassName("nbsa")[0];
         passed.innerText = "Passed";
@@ -40,83 +40,3 @@ function gradePass() {
   /*displays the calculated total ec value within the defined <p> of totalECs*/
   document.getElementById("totalECs").innerHTML = `${totalECs}`;
 }
-
-/*Scripts from Blog*/
-
-/*Script for SWOT-blog*/
-// Scripting for the blog posts to drop down /
-// Activates script when the DOM is loaded /
-document.addEventListener("DOMContentLoaded", function () {
-  // Defines the target menu /
-  var dropdown = document.getElementsByClassName("swot-blog");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    // Activates menu when you click it /
-    dropdown[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      // I wish I knew what this meant /
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
-  // Yay I love closing bracketes! /
-});
-
-/*Script for Coding Experience Blog*/
-document.addEventListener("DOMContentLoaded", function () {
-  var dropdown = document.getElementsByClassName("experience-blog");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
-});
-
-/*Script for First Feedback Blog*/
-document.addEventListener("DOMContentLoaded", function () {
-  var dropdown = document.getElementsByClassName("feedback1-blog");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
-});
-
-/*Script for Blog from IT field*/
-document.addEventListener("DOMContentLoaded", function () {
-  var dropdown = document.getElementsByClassName("ict-blog");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
-});
