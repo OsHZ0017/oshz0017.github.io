@@ -152,8 +152,15 @@ tr:hover {
 }
 
 /*Blog Divs*/
-.blog {
-  display: none;
+.blogs {
+  width: 70%;
+  float: right;
+}
+
+.blogmenu {
+  float: left;
+  text-align: left;
+  width: 20%;
 }
 
 /*Index Divs*/
