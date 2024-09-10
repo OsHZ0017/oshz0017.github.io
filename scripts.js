@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 /*Script for First Feedback Blog*/
 document.addEventListener("DOMContentLoaded", function () {
   var dropdown = document.getElementsByClassName("feedback1-blog");
@@ -103,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
 
 /*Script for Blog from IT field*/
 document.addEventListener("DOMContentLoaded", function () {
