@@ -102,7 +102,7 @@ summary {
 }
 
 dt {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 ol {
@@ -150,13 +150,12 @@ tr:hover {
 
 /*buttons??*/
 button {
-  background-color:#07004d;
+  background-color: #07004d;
   color: white;
   padding: 10px;
   font-family: monospace;
-  text-align:center;
+  text-align: center;
   cursor: pointer;
-
 }
 
 /*Dashboard Divs*/
