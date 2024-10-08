@@ -34,7 +34,7 @@ body {
   margin-right: 30px;
   overflow-y: scroll;
   color: #ffffff;
-  background-image: url("./media/logo.png") url("./media/background.jpg");
+  background-image: url(".././media/logo.png") url(".././media/background.jpg");
   background-color: black;
   font-family: "Courier New", Courier, monospace;
 }

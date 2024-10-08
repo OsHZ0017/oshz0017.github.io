@@ -1,12 +1,13 @@
+
+
+function navigationMenu(){
 const menu = document.getElementById('menuDiv');
 
-const index = document.createElement("p");
-const profile = document.createElement("p");
-const faq = document.createElement("p");
-const dashboard = document.createElement("p");
-const blogHome = document.createElement("p");
-
-
+const index = document.createElement("div");
+const profile = document.createElement("div");
+const faq = document.createElement("div");
+const dashboard = document.createElement("div");
+const blogHome = document.createElement("div");
 
 index.innerHTML = '<a href="index.html">Home page</a>';
 profile.innerHTML = '<a href="profile.html">About me</a>';
@@ -19,3 +20,6 @@ menu.appendChildd(profile);
 menu.appendChild(faq);
 menu.appendChild(dashboard);
 menu.appendChild(blogHome);
+}
+
+window.addEventListener('load', navigationMenu);
