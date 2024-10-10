@@ -1,15 +1,7 @@
 .aside {
-    display: flex;
-    width: 20%;
     background-color: #625437bc;
-    text-align: right;
     padding: 2%;
-    position: relative;
-    top: 0%;
-    margin: 2%;
-    display: flex;
-    z-index: 0;
-    float: right;
+    flex: 1;
 }
 
 ul {

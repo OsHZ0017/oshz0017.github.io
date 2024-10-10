@@ -10,7 +10,6 @@ section {
 }
 
 .blogmenu {
-    text-align: left;
     background-color: #625437bc;
     padding: 2%;
 }
@@ -20,4 +19,8 @@ ul {
     padding: 5px;
     margin: 0px;
     width: 100%;
+}
+
+h4 {
+    text-align: center;
 }

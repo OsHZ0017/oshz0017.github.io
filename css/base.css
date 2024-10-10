@@ -74,6 +74,7 @@ section {
   background-color: #292752b6;
   width: 80%;
   padding: 10px;
+  display: inline-flex;
 }
 
 article {
@@ -112,18 +113,6 @@ h5 {
   text-shadow: none;
 }
 
-summary {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-dt {
-  font-weight: bold;
-}
-
-ol {
-  text-align: left;
-}
 /* link modification */
 a:link,
 a:visited,
@@ -137,34 +126,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* table */
-table {
-  display: inline-block;
-  text-align: center;
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 800px;
-  background-color: #06004d67;
-}
-
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-}
-
-th {
-  background-color: #ccc9e7;
-  color: black;
-}
-
-tr:hover {
-  background-color: #07004d;
-  color: white;
-}
-
-/*buttons??*/
 button {
   background-color: #07004d;
   color: white;
@@ -174,15 +135,8 @@ button {
   cursor: pointer;
 }
 
-/*Dashboard Divs*/
-.legend {
-  width: 75px;
-  float: right;
-}
-
-.ectable {
-  border: none;
-  width: 300px;
+.articles {
+  flex: 5;
 }
 
 /*Profile Divs*/
@@ -199,4 +153,14 @@ button {
 .snapqr {
   float: right;
   padding: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
 }
