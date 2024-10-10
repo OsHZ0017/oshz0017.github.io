@@ -1,0 +1,29 @@
+.aside {
+    display: flex;
+    width: 20%;
+    background-color: #625437bc;
+    text-align: right;
+    padding: 2%;
+    position: relative;
+    top: 0%;
+    margin: 2%;
+    display: flex;
+    z-index: 0;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+}
+
+h1{
+    display: inline-flexbox
+}
+
+.suunn {
+    display: inline-block;
+    width: 30%;
+}

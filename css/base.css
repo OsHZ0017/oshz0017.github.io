@@ -1,8 +1,10 @@
-/*Header*/
+/*Header + Navigation*/
 nav {
+  a{
+    margin:2px;
+  }
   a:link,
   a:visited {
-    background-color: #07004d;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -13,39 +15,59 @@ nav {
 
   a:hover,
   a:active {
-    background-color: #17a398;
+    background-color: #1777a3;
     color: black;
   }
 }
+.active {
+    background-color: #1714c5;
+}
 
-header {
-  width: 600px;
-  background-color: #5b5b5ba7;
-  padding: 20px;
-  display: inline-block;
+.inactive{
+    background-color: #07004d;
+}
+
+.logoDiv {
+  position: relative;
+  left: 5px;
+  float: left;
+  display: flex;
+  height: 100%;
+}
+.logo {
+  height: 50px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #5b5b5b;
+  position: fixed;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0%;
+  margin-bottom: 2%;
+  display: block;
 }
 
 /*Body*/
 body {
-  margin: 10px;
-  text-align: center;
-  padding: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  text-align: center;;
   overflow-y: scroll;
   color: #ffffff;
-  background-image: url(".././media/logo.png") url(".././media/background.jpg");
   background-color: black;
   font-family: "Courier New", Courier, monospace;
+  margin-top: 80px;
 }
 
 section {
-  margin: 20px;
-  padding: 40px;
+  padding: 10px;
+  margin: auto;
   background-color: #5b5b5ba7;
   width: 80%;
-  display: inline-block;
-  border-radius: 5px;
+  display: inline-flexbox;
 }
 
 article {
@@ -57,22 +79,10 @@ article {
   padding-bottom: 30px;
 }
 
-aside {
-  display: block;
-  float: right;
-  width: 350px;
-  background-color: #625437bc;
-  text-align: right;
-  padding: 20px;
-}
-
-details {
-  text-align: left;
-}
 
 /*text specific */
 p {
-  padding-left: 10px;
+  padding: 10px;
 }
 
 h1,
@@ -179,12 +189,6 @@ button {
   float: left;
   text-align: left;
   width: 20%;
-}
-
-/*Index Divs*/
-.suunn {
-  display: inline-block;
-  width: 30%;
 }
 
 /*Profile Divs*/
