@@ -1,49 +1,60 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Experience Blog for Mika's HZ project" />
-    <meta name="author" content="Mika van Os" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog feed</title>
-    <link rel="stylesheet" href="style.css" />
-    <style src="style:css"></style>
-  </head>
-  <body>
-    <script src="scripts.js"></script>
-    <header>
-      <nav>
-        <a href="index.html">Home page</a>
-        <a href="profile.html">About me</a>
-        <a href="blog_home.html">Blog</a>
-        <a href="faq.html">FAQ</a>
-        <a href="dashboard.html">Dashboard</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <aside class="blogmenu">
-          <ul style="list-style-type: none">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Blog Page of Mika's HZ project">
+  <meta name="author" content="Mika van Os">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog feed</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+  <script src="nav.js"></script>
+  <div id="navigation" class="header">
+    <div class="logoDiv">
+      <a target="_blank" href="https://www.suunn.nl"><img class="logo" src="https://suunn.nl/images/r2d2.png"></a>
+    </div>
+    <nav>
+      <a class="inactive" href="index.html">Home page</a>
+      <a class="inactive" href="profile.html">About me</a>
+      <a class="active" href="blog_home.html">Blog</a>
+      <a class="inactive" href="faq.html">FAQ</a>
+      <a class="inactive" href="dashboard.html">Dashboard</a>
+    </nav>
+  </div>
+  <main>
+    <section>
+      <div class="blogMenuDiv">
+        <div class="blogmenu">
+          <ul>
             <li>
-              <a href="blog.html">Main blog feed</a>
-            </li>
-            <li><a href="study.html">Study Motivation</a></li>
-            <li>
-              <a href="swot.html">SWOT Analysis</a>
-            </li>
-            <li>
-              <a href="experience.html">Programming Experience</a>
-            </li>
-            <li>
-              <a href="feedback1.html">PCO Feedback</a>
+              <a href="../blog_home.html">Main blog feed</a>
             </li>
             <li>
-              <a href="ict-field.html">A note on AOUSD</a>
+              <a href="study_motivation_blog.html">Study Motivation</a>
+            </li>
+            <li>
+              <a href="swot_analysis_blog.html">SWOT Analysis</a>
+            </li>
+            <li>
+              <a href="code_experience_blog.html">Programming Experience</a>
+            </li>
+            <li>
+              <a href="first_feedback_blog.html">PCO Feedback</a>
+            </li>
+            <li>
+              <a href="aousd_blog.html">A note on AOUSD</a>
             </li>
           </ul>
-        </aside>
-        <article class="blogs">
+        </div>
+      </div>
+      <div class="blogsAll">
+        <article>
           <h1>Programming Experience</h1>
           <p>
             Personally, I haven’t got a lot of experience in the world of
@@ -77,8 +88,8 @@
             with automatic doors or lights that turned on when it got dark out.
             Never anything more major, and rarely anything self-made, but I used
             to follow tutorials by YouTubers such as
-            <a href="https://www.youtube.com/user/ThatMumboJumbo">Mumbo Jumbo</a
-            >. Usually I was able to understand what they had me build, and how
+            <a href="https://www.youtube.com/user/ThatMumboJumbo">Mumbo Jumbo</a>. Usually I was able to understand what
+            they had me build, and how
             the circuits worked. It was very exciting.
           </p>
           <p>
@@ -88,8 +99,11 @@
             :)
           </p>
           <h6>Written 08-09-24</h6>
+          <button onclick="window.location.href='../blog_home.html';">Back to main feed</button>
         </article>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
