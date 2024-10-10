@@ -5,22 +5,12 @@ section {
     flex: 3;
 }
 
-.blogMenuDiv{
+/*Specifically for the menu linking all the blogs.*/
+.blogMenuDiv {
     flex: 1;
 }
 
 .blogmenu {
     background-color: #625437bc;
     padding: 2%;
-}
-
-ul {
-    list-style-type: none;
-    padding: 5px;
-    margin: 0px;
-    width: 100%;
-}
-
-h4 {
-    text-align: center;
 }

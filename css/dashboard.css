@@ -6,9 +6,7 @@
     padding: 2%;
 }
 
-.recalculate {
-    margin-bottom: 10px;
-}
+/*Specifically for the legend and grade-color system*/
 .legend {
     margin: 2px;
     padding: 2px;
@@ -26,6 +24,11 @@
     background-color: green;
 }
 
+.recalculate {
+    margin-bottom: 10px;
+}
+
+/*For the table that calculates NBSA and the script behind it*/
 .ectable {
     border: 1px solid black;
     width: 300px;
@@ -69,6 +72,7 @@ tr:hover {
     color: white;
 }
 
+/*To determine set widths and visibilities for table rows.*/
 .rowSmall {
     width: 80px;
 }
