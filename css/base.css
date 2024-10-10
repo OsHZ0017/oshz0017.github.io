@@ -41,7 +41,7 @@ nav {
 .header {
   width: 100%;
   height: auto;
-  background-color: #5b5b5b;
+  background-color: #292752b6;
   position: fixed;
   padding-top: 10px;
   top: 0;
@@ -59,15 +59,21 @@ body {
   color: #ffffff;
   background-color: black;
   font-family: "Courier New", Courier, monospace;
-  margin-top: 80px;
+  background-image: url("/media/background.jpg");
+  background-position: 0%;
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: 100px;
+  background-image: url("/media/logo.png");
 }
 
 section {
-  padding: 10px;
   margin: auto;
-  background-color: #5b5b5ba7;
+  background-color: #292752b6;
   width: 80%;
-  display: inline-flexbox;
+  padding: 10px;
 }
 
 article {
@@ -177,18 +183,6 @@ button {
 .ectable {
   border: none;
   width: 300px;
-}
-
-/*Blog Divs*/
-.blogs {
-  width: 70%;
-  float: right;
-}
-
-.blogmenu {
-  float: left;
-  text-align: left;
-  width: 20%;
 }
 
 /*Profile Divs*/
