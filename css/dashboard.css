@@ -73,14 +73,18 @@ tr:hover {
 }
 
 /*To determine set widths and visibilities for table rows.*/
-.rowSmall {
+.row-small {
     width: 80px;
 }
 
-.rowBig {
+.row-big {
     width: 320px;
 }
 
 .invisible {
     display: none;
+}
+
+.no-border {
+    border: none;
 }

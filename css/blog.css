@@ -1,16 +1,16 @@
 section {
     display: flex;
 }
-.blogsAll {
+.blogs-all {
     flex: 3;
 }
 
 /*Specifically for the menu linking all the blogs.*/
-.blogMenuDiv {
+.blog-menu-div {
     flex: 1;
 }
 
-.blogmenu {
+.blog-menu {
     background-color: #625437bc;
     padding: 2%;
 }

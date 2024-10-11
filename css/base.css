@@ -88,7 +88,7 @@ article {
 }
 
 .articles {
-  flex: 5;
+    flex: 5;
 }
 
 /*text specific */
