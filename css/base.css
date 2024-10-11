@@ -70,6 +70,11 @@ main {
     background-image: url("/media/logo.png");
 }
 
+aside {
+    flex: 1;
+    height: auto;
+}
+
 section {
     margin: auto;
     background-color: #292752b6;
