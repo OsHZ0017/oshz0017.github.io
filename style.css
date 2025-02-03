@@ -1,0 +1,205 @@
+/*Header*/
+nav {
+  a:link,
+  a:visited {
+    background-color: #07004d;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+  }
+
+  a:hover,
+  a:active {
+    background-color: #17a398;
+    color: black;
+  }
+}
+
+header {
+  width: 600px;
+  background-color: #5b5b5ba7;
+  padding: 20px;
+  display: inline-block;
+}
+
+/*Body*/
+body {
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow-y: scroll;
+  color: #ffffff;
+  background-image: url("media/mika.png"), url(media/space2.jpg);
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+section {
+  margin: 20px;
+  padding: 40px;
+  background-color: #5b5b5ba7;
+  width: 80%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+article {
+  width: auto;
+  text-align: center;
+  background-color: #603762c5;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+aside {
+  display: block;
+  float: right;
+  width: 350px;
+  background-color: #625437bc;
+  text-align: right;
+  padding: 20px;
+}
+
+details {
+  text-align: left;
+}
+
+/*text specific */
+p {
+  padding-left: 10px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+summary {
+  color: #ddb967;
+  text-shadow: 2px 2px black;
+}
+
+h5 {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dt {
+  font-weight:bold;
+}
+
+ol {
+  text-align: left;
+}
+/* link modification */
+a:link,
+a:visited,
+a:active {
+  color: #ddb967;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #17a398;
+  text-decoration: underline;
+}
+
+/* table */
+table {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 800px;
+  background-color: #06004d67;
+}
+
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+th {
+  background-color: #ccc9e7;
+  color: black;
+}
+
+tr:hover {
+  background-color: #07004d;
+  color: white;
+}
+
+/*buttons??*/
+button {
+  background-color:#07004d;
+  color: white;
+  padding: 10px;
+  font-family: monospace;
+  text-align:center;
+  cursor: pointer;
+
+}
+
+/*Dashboard Divs*/
+.legend {
+  width: 75px;
+  float: right;
+}
+
+.ectable {
+  border: none;
+  width: 300px;
+}
+
+/*Blog Divs*/
+.blogs {
+  width: 70%;
+  float: right;
+}
+
+.blogmenu {
+  float: left;
+  text-align: left;
+  width: 20%;
+}
+
+/*Index Divs*/
+.suunn {
+  display: inline-block;
+  width: 30%;
+}
+
+/*Profile Divs*/
+.toddler {
+  float: right;
+  padding: 20px;
+}
+
+.watervid {
+  float: left;
+  padding: 20px;
+}
+
+.snapqr {
+  float: right;
+  padding: 20px;
+}
